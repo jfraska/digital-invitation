@@ -1,12 +1,12 @@
 import { GenteRomantica, Catamaran } from "@/styles/fonts";
+import Animate from "@/styles/animations/animate";
 
 export default function LoveStory() {
   return (
-    <section
-      className="relative w-full h-fit py-20 px-10 flex flex-col justify-start items-center gap-4 text-center"
-      name="story"
-    >
-      <h1 className={`${GenteRomantica.className} mb-4 text-5xl`}>
+    <section>
+      <Animate animationType="slowFade" className="relative w-full h-fit py-20 px-10 flex flex-col justify-start items-center gap-4 text-center"
+      name="story">
+        <h1 className={`${GenteRomantica.className} mb-4 text-5xl`}>
         Kisah Cinta
       </h1>
 
@@ -31,6 +31,7 @@ export default function LoveStory() {
           fringilla accumsan, risus sem sollicitudin lacus.
         </p>
       </div>
+      </Animate>
     </section>
   );
 }

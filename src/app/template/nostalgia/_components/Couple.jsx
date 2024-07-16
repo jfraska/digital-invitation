@@ -1,4 +1,5 @@
 import { GenteRomantica, Catamaran } from "@/styles/fonts";
+import Animate from "@/styles/animations/animate";
 
 export default function Couple() {
   return (
@@ -11,12 +12,15 @@ export default function Couple() {
               alt=""
               className="rounded-tl-full rounded-tr-full w-full object-cover h-72"
             />
+            <Animate animationType="fadeSlide">
             <h2
               className={`${GenteRomantica.className} absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-4xl`}
             >
               Qetura Hizaya
             </h2>
+            </Animate>
           </div>
+          <Animate animationType="fadeSlide">
           <p className={`${Catamaran.className} text-black`}>
             Putra Pertama dari
           </p>
@@ -29,6 +33,7 @@ export default function Couple() {
           >
             @Instagram
           </a>
+          </Animate>
         </div>
 
         <hr className="my-8" />
@@ -40,13 +45,16 @@ export default function Couple() {
               alt="Couple"
               className="rounded-tl-full rounded-tr-full w-full object-cover h-72"
             />
-            <h2
+            <Animate animationType="fadeSlide">
+              <h2
               className={`${GenteRomantica.className} absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-4xl`}
             >
               Zoe Himaya
             </h2>
+            </Animate>
           </div>
-          <p className={`${Catamaran.className} text-black`}>
+          <Animate animationType="fadeSlide">
+            <p className={`${Catamaran.className} text-black`}>
             Putri Kedua dari
           </p>
           <p className={`${Catamaran.className} text-black`}>
@@ -58,6 +66,8 @@ export default function Couple() {
           >
             @Instagram
           </a>
+          </Animate>
+          
         </div>
       </div>
     </section>

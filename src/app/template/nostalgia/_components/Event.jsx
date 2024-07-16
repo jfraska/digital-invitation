@@ -1,4 +1,5 @@
 import { GenteRomantica, Catamaran } from "@/styles/fonts";
+import Animate from "@/styles/animations/animate";
 
 export default function Event() {
   return (
@@ -16,6 +17,7 @@ export default function Event() {
             />
           </div>
           <div className="flex flex-col gap-8">
+            <Animate animationType="slowFade">
             <div className="flex flex-col gap-3">
               <p className={`${GenteRomantica.className} text-black`}>
                 Akad Nikah
@@ -48,6 +50,7 @@ export default function Event() {
                 eu turpis molestie,
               </p>
             </div>
+            </Animate>
             <div className="flex justify-center mt-8">
               <button className="bg-white text-black px-4 py-2 border rounded-tl-full rounded-bl-full shadow">
                 Save The Date
