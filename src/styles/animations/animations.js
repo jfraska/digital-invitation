@@ -27,11 +27,11 @@ const animations = {
       element,
       {
         y: [-50, 0],
-        opacity: [0, 0.5, 1],
+        opacity: [0, 0.2, 0.4, 0.5, 0.6, 1],
       },
       {
         delay: stagger(0.7),
-        duration: 1,
+        duration: 1.5,
         easing: [0.22, 0.03, 0.26, 1],
       }
     );
@@ -67,17 +67,6 @@ const animations = {
       element.style.height = 'auto'; 
     });
   },
-  wipe: (element) => {
-    animate(
-      element,
-      { opacity: [0, 0.1, 0.3, 0.5, 0.7, 1] },
-      {
-        delay: stagger(0.5),
-        duration: 1.5,
-        easing: [0.22, 0.03, 0.26, 1],
-      }
-    );
-  },
   slowFade: (element) => {
     animate(
       element,
@@ -85,9 +74,23 @@ const animations = {
         opacity: [0, 0.1, 0.3, 0.5, 0.7, 1],
       },
       {
-        duration: 1,
+        duration: 1.5,
         easing: [0.22, 0.03, 0.26, 1],
         fill: "forwards",
+      }
+    );
+  },
+  zoomIn: (element) => {
+    element.style.transformOrigin = "top center";
+    animate(
+      element,
+      { 
+        scale: [0, 1],
+        opacity: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 1],
+      },
+      {
+        duration: 1.5,
+        easing: [0.22, 0.03, 0.26, 1],
       }
     );
   },

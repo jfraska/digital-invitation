@@ -4,7 +4,7 @@ import Animate from "@/styles/animations/animate";
 export default function Galery() {
   return (
     <section className="relative flex flex-col w-full h-fit p-4 items-center mx-auto bg-[#333333]">
-      <Animate animationType="slowFade" className="relative mb-4 w-full">
+      <Animate animationType="zoomIn" className="relative mb-4 w-full">
         <img
           src="/templates/nostalgia/gallery-1.png"
           alt=""
@@ -17,7 +17,7 @@ export default function Galery() {
         </h2>
       </Animate>
 
-      <Animate animationType="slowFade" className="relative mb-4 w-full">
+      <Animate animationType="zoomIn" className="relative mb-4 w-full">
         <img
           src="/templates/nostalgia/gallery-2.png"
           alt=""
@@ -25,7 +25,7 @@ export default function Galery() {
         />
       </Animate>
 
-      <Animate animationType="slowFade" className="flex relative mb-4 w-full gap-5">
+      <Animate animationType="zoomIn" className="flex relative mb-4 w-full gap-5">
         <div className="flex-1">
           <img
             src="/templates/nostalgia/gallery-3.png"
@@ -42,7 +42,7 @@ export default function Galery() {
         </div>
       </Animate>
 
-      <Animate animationType="slowFade" className="relative mb-4 w-full">
+      <Animate animationType="zoomIn" className="relative mb-4 w-full">
         <img
           src="/templates/nostalgia/gallery-5.png"
           alt=""
